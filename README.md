@@ -1,34 +1,53 @@
 # Sistema de Cadastro para Eventos Corporativos
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+Sistema simples para o setor de RH gerenciar participantes de eventos corporativos.
 
-Sistema desenvolvido para o setor de RH gerenciar participantes de eventos corporativos.
+## Funcionalidades
 
-## 📌 Funcionalidades
+- Autenticação de usuários
+- Cadastro e gestão de participantes
+- Filtros por setor e cidade
+- Painel administrativo
+- Controle de check-in
 
-- ✅ Autenticação segura de usuários
-- 📝 CRUD completo de participantes
-- 🔍 Filtros por setor e cidade
-- 📊 Dashboard administrativo
-- 📅 Controle de data/hora de check-in
+## Tecnologias Utilizadas
 
-## 🛠 Tecnologias Utilizadas
+- PHP
+- MySQL
+- HTML, CSS
+- Bootstrap
 
-- **Backend**: PHP puro
-- **Banco de Dados**: MySQL
-- **Frontend**: HTML5, CSS3, Bootstrap
-- **Servidor**: XAMPP/Apache
-
-## 🚀 Como Instalar
+## Como Instalar
 
 ### Pré-requisitos
-- XAMPP (Apache + MySQL)
+- XAMPP (Apache e MySQL)
 - PHP 7.4+
-- Git (opcional)
 
-### Passo a Passo
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/sistema-eventos-corporativos.git
+### Instalação
+1. Coloque os arquivos na pasta htdocs do XAMPP
+2. Crie um banco de dados chamado "eventos_corporativos"
+3. Importe o arquivo database.sql (se disponível)
+4. Configure as credenciais no arquivo config/database.php
+5. Inicie o Apache e MySQL no XAMPP
+6. Acesse: http://localhost/nome-da-pasta/admin/login.php
+
+### Credenciais de Teste
+Administrador:
+- Email: maria@empresa.com
+- Senha: 123456
+
+## Estrutura de Arquivos
+```
+eventos-corporativos/
+├── admin/          # Painel administrativo
+├── config/         # Configurações
+├── participantes/  # Gestão de participantes
+├── assets/         # CSS e JS
+├── index.php       # Página inicial
+└── README.md       # Documentação
+```
+
+## Licença
+Licença MIT - veja o arquivo LICENSE para detalhes.
+
+Desenvolvido por Marcos Gabriel Nobre de Paiva - mgabrielnp.2606@gmail.com
